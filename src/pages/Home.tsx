@@ -28,7 +28,7 @@ const Home: React.FC = () => {
       <div className={styles.btn_container}>
         <NavLink
           className={`${styles.btn_a} ${styles.backgroud_theme}`}
-          to="/contacts"
+          to="/contact"
         >
           About
         </NavLink>
