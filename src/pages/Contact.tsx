@@ -20,7 +20,8 @@ const Home: React.FC = () => {
       </div>
       <div className={styles.content_name}>
         <h2>Tony Yan</h2>
-        <h3>President</h3>
+        <h4>CEO</h4>
+        <h4>FOUNDER</h4>
       </div>
       <div className={styles.content_info}>
         <div className={styles.content_info_address}>
