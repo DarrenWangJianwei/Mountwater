@@ -2,11 +2,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 30px 50px;
-  height: 100px;
   width: calc(100% - calc(2 * var(--sideMargins)));
-  padding-right: 2em;
+  padding: 1em 5em 1em 5em;
   z-index: 1;
+  background-color: black;
 }
 
 .hamIcon {

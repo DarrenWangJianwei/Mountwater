@@ -1,15 +1,28 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./css/header.module.css";
+import useProgressiveImg from "../../utils/progressiveImg";
 
 const Header: React.FC = () => {
   const [checked, setChecked] = useState(false);
+  const { src, blur } = useProgressiveImg("./logo1.svg", "./logo1.jpg");
 
   const clickLinks = (): void => {
     setChecked(false);
   };
   return (
     <header className={styles.header}>
+      <div>
+        <img
+          alt="MountWater Logo"
+          src={src}
+          style={{
+            width: 64,
+            filter: blur ? "blur(20px)" : "none",
+            transition: blur ? "none" : "filter 0.3s ease-out",
+          }}
+        />
+      </div>
       <NavLink
         to="/"
         onClick={clickLinks}
