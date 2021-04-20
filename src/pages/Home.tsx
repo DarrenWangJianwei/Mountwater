@@ -1,7 +1,7 @@
 import * as React from "react";
 import styles from "../components/home/css/home.module.css";
 import FluidAnimation from "react-fluid-animation";
-import Link from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const defaultConfig = {
   textureDownsample: 1,
@@ -17,7 +17,7 @@ const Home: React.FC = () => {
   return (
     <div
       style={{
-        height: "100vh",
+        height: "87vh",
       }}
     >
       <FluidAnimation config={defaultConfig} />
@@ -25,6 +25,9 @@ const Home: React.FC = () => {
       <div className={styles.main}>
         <div className={styles.heroContent}>
           <h1>做我们喜欢的事</h1>
+          <NavLink to="/contact" className={styles.btn}>
+            Read More
+          </NavLink>
         </div>
         <div className={styles.heroDetail}>
           <p>

@@ -18,6 +18,7 @@
 .heroContent {
   flex-grow: 1;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -33,4 +34,18 @@
 .heroDetail p {
   font-size: 1.2em;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+  color: rgb(145, 105, 105);
+  font-size: 1.2em;
+  pointer-events: initial;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.btn:hover {
+  color: rgb(146, 59, 59);
+  font-size: 1.4em;
+  font-weight: bold;
 }
