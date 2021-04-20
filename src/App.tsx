@@ -4,6 +4,7 @@ import Header from "./components/header/header";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
+import Projects from "./pages/Projects";
 
 const App: React.FC = () => (
   <div>
@@ -20,6 +21,7 @@ const App: React.FC = () => (
           <Route exact path="/about">
             <About />
           </Route>
+          <Route path="/projects/:index" component={Projects} />
         </Switch>
       </div>
     </Router>
