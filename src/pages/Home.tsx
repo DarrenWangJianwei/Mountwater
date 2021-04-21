@@ -2,6 +2,8 @@ import * as React from "react";
 import styles from "../components/home/css/home.module.css";
 import FluidAnimation from "react-fluid-animation";
 import { NavLink } from "react-router-dom";
+import simulateClick from "../utils/mouseEvent";
+import { animated } from "react-spring";
 
 const defaultConfig = {
   textureDownsample: 1,
@@ -17,7 +19,7 @@ const Home: React.FC = () => {
   return (
     <div
       style={{
-        height: "87vh",
+        height: "100vh",
       }}
     >
       <FluidAnimation config={defaultConfig} />
@@ -25,9 +27,11 @@ const Home: React.FC = () => {
       <div className={styles.main}>
         <div className={styles.heroContent}>
           <h1>做我们喜欢的事</h1>
-          <NavLink to="/contact" className={styles.btn}>
-            Read More
-          </NavLink>
+          <animated.div>
+            <NavLink to="/about" className={styles.btn}>
+              Read More
+            </NavLink>
+          </animated.div>
         </div>
         <div className={styles.heroDetail}>
           <p>
