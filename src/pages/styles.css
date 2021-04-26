@@ -40,6 +40,7 @@ body {
   text-align: center;
   margin-bottom: 3rem;
   font-size: 2em;
+  padding-top: 10vh;
 }
 
 .hero {
@@ -143,5 +144,8 @@ body {
   }
   .card-body {
     font-size: 18px;
+  }
+  .info {
+    padding-top: 0;
   }
 }

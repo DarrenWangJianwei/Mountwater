@@ -1,6 +1,6 @@
 .gallery {
   min-width: 300px;
-  min-height: 50vh;
+  max-height: 50vh;
 }
 
 .content {
@@ -8,6 +8,7 @@
 }
 
 .container {
+  padding-top: 8vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;

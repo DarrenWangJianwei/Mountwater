@@ -1,9 +1,9 @@
 .main {
   width: 50%;
-  min-width: 500px;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  padding-top: 13vh;
 }
 
 .content_name {
