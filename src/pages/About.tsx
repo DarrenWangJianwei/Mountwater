@@ -125,6 +125,9 @@ export function Particles({ children }: any) {
                 size_min: 0.3,
               },
             },
+            color: {
+              value: "#6e95ee",
+            },
             line_linked: {
               enable: false,
             },
@@ -152,6 +155,7 @@ export function Particles({ children }: any) {
                 duration: 2,
                 size: 0,
                 opacity: 0,
+                color: "#1053ee",
               },
               repulse: {
                 distance: 400,

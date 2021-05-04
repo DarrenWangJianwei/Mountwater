@@ -4,7 +4,7 @@ import useProgressiveImg from "./../utils/progressiveImg";
 import { Particles, Hero } from "../pages/About";
 
 const Home: React.FC = () => {
-  const { src, blur } = useProgressiveImg("./logo.svg", "./logo.jpg");
+  const { src, blur } = useProgressiveImg("./logo.svg", "./logo2.jpg");
 
   return (
     <Particles>

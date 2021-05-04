@@ -13,11 +13,12 @@
 
 .content_name > h2,
 .content_name > h4 {
-  color: #1053ee;
+  color: black;
   line-height: 0px;
 }
 .content_name > h2 {
   line-height: 20px;
+  color: #233d7b;
 }
 
 .content_info {
@@ -31,7 +32,7 @@
   margin-block-start: 0em;
   margin-block-end: 0em;
   min-width: 240px;
-  color: white;
+  color: black;
 }
 
 .content_info_address {
