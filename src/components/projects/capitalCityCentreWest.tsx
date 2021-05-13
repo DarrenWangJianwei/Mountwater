@@ -19,6 +19,23 @@ const CapitalCityCentre: React.FC<VictoriaSuareCentreProps> = () => {
           <div className={styles.content}>
             <h1>Capital City Centre West</h1>
             <p>
+              The West side of Capital City Centre is a MH Zoning: Mixed
+              High-Rise
+            </p>
+            <p>
+              Mixed High-Rise zoning is intended to provide for mixed-use
+              development within a building or on a single lot, encouraging a
+              variety of medium intensity commerical uses and a positive
+              pedestrian experience.
+            </p>
+            <h3>Permitted uses include:</h3>
+            <p>
+              Retail, food &amp; beverage, personal service, animal support,
+              professional office, assisted living, religous assembly,
+              residential business.
+            </p>
+            <h3>Market Information:</h3>
+            <p>
               Located at the intersection of Ring Road and Victoria Avenue East
               (Highway 1), the centre benefits from exceptional exposure along
               two major arterial thoroughfares. This property is shadow-anchored
@@ -34,12 +51,11 @@ const CapitalCityCentre: React.FC<VictoriaSuareCentreProps> = () => {
               destination of Regina that sees over 56,600 vehicles per day.
             </p>
             <p>
-              Capital City Centre features 243 parking stalls for a parking
-              ratio of 5.29 stalls per 1,000 SF.
+              The West side of Capital City Centre features 181 parking stalls.
             </p>
             <p>
               The property is easily accessible by public transit with two bus
-              stops immediatelyt adjacent to the Property, serving up to 4
+              stops immediately adjacent to the Property, serving up to 4
               individual bus routs.
             </p>
           </div>
@@ -78,6 +94,14 @@ const ImagesGalleryRemote = () => {
   return images ? <ImageGallery items={images} /> : null;
 };
 const images = [
+  {
+    original: "/capital_square_centre/gallery/CapCity-10.jpg",
+    thumbnail: "/capital_square_centre/gallery/CapCity-10.jpg",
+  },
+  {
+    original: "/capital_square_centre/gallery/CapCity-11.jpg",
+    thumbnail: "/capital_square_centre/gallery/CapCity-11.jpg",
+  },
   {
     original: "/capital_square_centre/gallery/CapCity-5.jpg",
     thumbnail: "/capital_square_centre/gallery/CapCity-5.jpg",

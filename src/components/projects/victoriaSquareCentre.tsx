@@ -95,6 +95,14 @@ const VictoriaSuareCentre: React.FC<VictoriaSuareCentreProps> = () => {
               demographic, with average household income of $124,616 within the
               adjacent neighborhoods.
             </p>
+            <button
+              className={styles.btn}
+              onClick={() => {
+                window.location.href = "https://vicsquare.ca/";
+              }}
+            >
+              More
+            </button>
           </div>
         </div>
       </Hero>

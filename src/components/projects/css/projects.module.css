@@ -17,6 +17,21 @@
   margin: 0 auto;
 }
 
+.btn {
+  position: relative;
+  z-index: 9;
+  border-radius: 20px;
+  font-size: 1em;
+  padding: 0.5em 1em;
+  border: none;
+  cursor: pointer;
+  background-color: #233d7b;
+  color: cornsilk;
+}
+
+.btn:hover {
+  background-color: #5177d1;
+}
 @media screen and (max-width: 1000px) {
   .container {
     grid-template-columns: 1fr;

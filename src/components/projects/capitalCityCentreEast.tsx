@@ -19,6 +19,18 @@ const CapitalCityCentre: React.FC<VictoriaSuareCentreProps> = () => {
           <div className={styles.content}>
             <h1>Capital City Centre East</h1>
             <p>
+              The East side of Capital City Centre is a MLM Zoning: Mixed-Large
+              Market.
+            </p>
+            <h3>Permitted uses include:</h3>
+            <p>
+              Shopping Centres, retail, food &amp; beverage, drive-through,
+              restaurant, health care and education institution, professional
+              office, animal support, personal and professional services, and
+              assisted living dwellings.
+            </p>
+            <h3>Market Infomation:</h3>
+            <p>
               Located at the intersection of Ring Road and Victoria Avenue East
               (Highway 1), the centre benefits from exceptional exposure along
               two major arterial thoroughfares. This property is shadow-anchored
@@ -34,8 +46,7 @@ const CapitalCityCentre: React.FC<VictoriaSuareCentreProps> = () => {
               destination of Regina that sees over 56,600 vehicles per day.
             </p>
             <p>
-              Capital City Centre features 243 parking stalls for a parking
-              ratio of 5.29 stalls per 1,000 SF.
+              The East side of Capital City Centre features 180 parking stalls.
             </p>
             <p>
               The property is easily accessible by public transit with two bus
@@ -79,6 +90,14 @@ const ImagesGalleryRemote = () => {
 };
 const images = [
   {
+    original: "/capital_square_centre/gallery/CapCity-12.jpg",
+    thumbnail: "/capital_square_centre/gallery/CapCity-12.jpg",
+  },
+  {
+    original: "/capital_square_centre/gallery/CapCity-13.jpg",
+    thumbnail: "/capital_square_centre/gallery/CapCity-13.jpg",
+  },
+  {
     original: "/capital_square_centre/gallery/CapCity-1.jpg",
     thumbnail: "/capital_square_centre/gallery/CapCity-1.jpg",
   },
@@ -97,14 +116,6 @@ const images = [
   {
     original: "/capital_square_centre/gallery/CapCity-7.jpg",
     thumbnail: "/capital_square_centre/gallery/CapCity-7.jpg",
-  },
-  {
-    original: "/capital_square_centre/gallery/CapCity-8.jpg",
-    thumbnail: "/capital_square_centre/gallery/CapCity-8.jpg",
-  },
-  {
-    original: "/capital_square_centre/gallery/CapCity-9.jpg",
-    thumbnail: "/capital_square_centre/gallery/CapCity-9.jpg",
   },
 ];
 const ImagesGalleryLocal = () => {
