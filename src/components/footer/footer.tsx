@@ -4,9 +4,18 @@ import styles from "./css/footer.module.css";
 const Footer: React.FC = () => {
   return (
     <footer className={styles.footer}>
-      <h4>Mountwater Capital Corp</h4>
-      <p>#44 - 2233 Victoria Avenue East,</p>
-      <p>Regina, Saskatchewan, S4N 6E4</p>
+      <p className={styles.copyRight}>
+        ©2021 Mountwater Capital Corp. All rights reserved.
+        <br />
+        Terms of Use Privacy Policy
+      </p>
+      <p className={styles.address}>
+        <strong>Mountwater Capital Corp</strong>
+        <br />
+        1519 Bellevue Ave,
+        <br />
+        West Vancouver, BC, V7V 1A6
+      </p>
     </footer>
   );
 };

@@ -1,13 +1,17 @@
 import React, { useState, useRef } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from "./pages/Home";
+import Home from "./pages/Home1";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
-import Projects from "./pages/Projects";
+import VictoriaSuareCentre from "./components/projects/victoriaSquareCentre";
+import CapitalCityCentreEast from "./components/projects/capitalCityCentreEast";
+import CapitalCityCentreWest from "./components/projects/capitalCityCentreWest";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./utils/theme";
 import Burger from "./components/nav/burger/burger";
 import Menu from "./components/nav/menu/menu";
+import Header from "./components/header/header";
+import Footer from "./components/footer/footer";
 import { useOnClickOutside } from "./utils/hooks";
 
 const App: React.FC = () => {
@@ -22,8 +26,10 @@ const App: React.FC = () => {
         <Burger open={open} setOpen={setOpen} />
         <Menu open={open} />
       </div>
+
       <Router>
         <div className="Site-content">
+          <Header />
           <Switch>
             <Route exact path="/">
               <Home />
@@ -34,8 +40,17 @@ const App: React.FC = () => {
             <Route exact path="/about">
               <About />
             </Route>
-            <Route path="/projects/:index" component={Projects} />
+            <Route exact path="/projects/vicSquare">
+              <VictoriaSuareCentre />
+            </Route>
+            <Route exact path="/projects/capCentreEast">
+              <CapitalCityCentreEast />
+            </Route>
+            <Route exact path="/projects/capCentreWest">
+              <CapitalCityCentreWest />
+            </Route>
           </Switch>
+          <Footer />
         </div>
       </Router>
     </ThemeProvider>

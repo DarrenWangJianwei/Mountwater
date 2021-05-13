@@ -3,7 +3,7 @@
   margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding-top: 13vh;
+  font-family: Ultra;
 }
 
 .content_name {
@@ -19,6 +19,7 @@
 .content_name > h2 {
   line-height: 20px;
   color: #233d7b;
+  font-size: 3em;
 }
 
 .content_info {

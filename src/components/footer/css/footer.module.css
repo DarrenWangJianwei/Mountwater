@@ -1,6 +1,21 @@
 .footer {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
   color: white;
-  background-color: black;
-  align-content: center;
+  background-color: rgb(128, 128, 128);
+  font-size: 0.8rem;
+  line-height: 1.4;
+  font-family: "Times New Roman", Times, serif;
+  height: 15vh;
+}
+
+.copyRight {
+  justify-self: center;
+}
+
+.address {
+  justify-self: center;
+  text-align: end;
 }

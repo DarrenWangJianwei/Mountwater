@@ -3,7 +3,8 @@ import axios from "axios";
 import "react-image-gallery/styles/css/image-gallery.css";
 import ImageGallery, { ReactImageGalleryItem } from "react-image-gallery";
 import styles from "../components/projects/css/projects.module.css";
-import { Particles, Hero } from "../pages/About";
+import Particles from "../components/particles/Particles";
+import Hero from "../components/hero/Hero";
 export interface ProjectsProps {}
 
 const Projects: React.FC<ProjectsProps> = () => {

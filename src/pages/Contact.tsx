@@ -1,7 +1,8 @@
 import * as React from "react";
 import styles from "../components/contact/css/contact.module.css";
 import useProgressiveImg from "./../utils/progressiveImg";
-import { Particles, Hero } from "../pages/About";
+import Particles from "../components/particles/Particles";
+import Hero from "../components/hero/Hero";
 
 const Home: React.FC = () => {
   const { src, blur } = useProgressiveImg("./logo.svg", "./logo2.jpg");
@@ -22,18 +23,15 @@ const Home: React.FC = () => {
             />
           </div>
           <div className={styles.content_name}>
-            <h2>Tony Yan</h2>
-            <h4>CEO</h4>
-            <h4>FOUNDER</h4>
+            <h2>Office</h2>
           </div>
           <div className={styles.content_info}>
             <div className={styles.content_info_address}>
-              <p>#44 - 2233 Victoria Avenue East,</p>
-              <p>Regina, Saskatchewan, S4N 6E4</p>
+              <p>1519 Bellevue Ave,</p>
+              <p>West Vancouver, BC, V7V 1A6</p>
             </div>
             <div>
-              <p>C: 778-829-9955</p>
-              <p>E: Tony@mountwatercapital.com</p>
+              <p>E: office@mountwatercapital.com</p>
               <p>www.MountwaterCapital.com</p>
             </div>
           </div>
